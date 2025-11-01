@@ -210,10 +210,6 @@ const Dashboard = () => {
     }
   };
 
-  const handleAccountInfo = () => {
-    // Navigate to account info page or show modal
-    console.log("Account info clicked");
-  };
 
   const handleLogout = () => {
     sessionStorage.removeItem("token");
@@ -231,9 +227,6 @@ const Dashboard = () => {
             <h1 className="header-title">MockMe</h1>
           </div>
           <nav className="header-nav">
-            <button className="nav-button" onClick={handleAccountInfo}>
-              Account Info
-            </button>
             <button className="nav-button" onClick={handleLogout}>
               Logout
             </button>
@@ -285,7 +278,7 @@ const Dashboard = () => {
               >
                 <div className="card-content">
                   <div className="card-header">
-                    <h3>Database Management</h3>
+                    <h3>Database Management System</h3>
                     <div className="card-icon">🗃️</div>
                   </div>
                   <p>Test your knowledge of databases, SQL queries, normalization, indexing, and database design principles.</p>
@@ -315,25 +308,6 @@ const Dashboard = () => {
                   <div className="card-hover-effect"></div>
                 </div>
                 <div className="card-sparkle">🔧</div>
-              </div>
-
-              <div 
-                className={`domain-card glowing-border ${isPulsing ? 'pulse-once' : ''}`} 
-                onClick={(e) => handleDomainClick("HR and Behavioral", e)} 
-              >
-                <div className="card-content">
-                  <div className="card-header">
-                    <h3>HR Interview</h3>
-                    <div className="card-icon">🤝</div>
-                  </div>
-                  <p>Prepare for behavioral questions, situational responses, and cultural fit assessments.</p>
-                  <div className="card-footer">
-                    <span className="card-difficulty">All Levels</span>
-                    <span className="card-questions">40+ Questions</span>
-                  </div>
-                  <div className="card-hover-effect"></div>
-                </div>
-                <div className="card-sparkle">🌟</div>
               </div>
             </div>
           </div>

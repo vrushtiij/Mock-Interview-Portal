@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import ProtectedRoute from '../../flask-demo/ProtectedRoute';
+import ProtectedRoute from '../../flask-backend/ProtectedRoute';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './components/login/login'
 import Signup from './components/signup/signup'
