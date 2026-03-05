@@ -16,10 +16,10 @@ import math
 
 app = Flask(__name__)
 CORS(app)
-app.secret_key = "abcdefghijklmnopqrstuvwxyz123456789"
+app.secret_key = [secret_key]
 CORS(app, supports_credentials=True)
 
-app.config['JWT_SECRET_KEY'] = 'secret-key'  
+app.config['JWT_SECRET_KEY'] = [secret-key] 
 app.config['JWT_ACCESS_TOKEN_EXPIRES'] = timedelta(hours=1)
 jwt = JWTManager(app)
 bi_encoder = SentenceTransformer('all-MiniLM-L6-v2')  # Fast & accurate
@@ -27,8 +27,8 @@ cross_encoder = CrossEncoder('cross-encoder/ms-marco-MiniLM-L-6-v2')
 
 db = mysql.connector.connect(
     host="localhost",
-    user="root",
-    password="",  
+    user="[root]",
+    password="[PASSWORD]",  
     database="mockme"
 )
 cursor = db.cursor()

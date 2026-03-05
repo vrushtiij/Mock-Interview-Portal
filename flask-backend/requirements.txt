@@ -1,0 +1,13 @@
+Flask
+flask-cors
+mysql-connector-python
+flask-jwt-extended
+Werkzeug
+sentence-transformers
+scikit-learn
+textblob
+textstat
+requests
+spacy
+torch
+numpy
